@@ -1,0 +1,64 @@
+:root {
+  --blue-gradient: linear-gradient(to right, #667db6 0%, #0082c8 100%);
+  --light-gradient: linear-gradient(to right, #c9d6ff 0%, #e2e2e2 100%);
+  --dark-gradient: linear-gradient(to right, #232526 0%, #414345 100%);
+  --card-gradient: linear-gradient(to right, #f2f2f2 0%, #e2e2e2 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.window {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: var(--blue-gradient);
+}
+.header {
+  margin: 1rem;
+}
+.title {
+  display: grid;
+  place-items: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.card-container {
+  background-image: var(--card-gradient);
+
+  height: 10rem;
+  width: 20rem;
+  box-shadow: 3px 3px 3px 2px rgb(0 0 0 / 20%);
+}
+.card-text {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.card-text p {
+  font-weight: 600;
+  color: white;
+  text-shadow: 1.5px 1.5px black;
+  font-size: large;
+}
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+button {
+  width: 4rem;
+  height: 2rem;
+  background-image: var(--light-gradient);
+  font-weight: 600;
+  color: white;
+  text-shadow: 1.5px 1.5px black;
+  border: none;
+  border-radius: 20%;
+  transition: background-image 0.1s ease, color 0.1s ease;
+}
+button:hover {
+  background-image: var(--dark-gradient);
+}

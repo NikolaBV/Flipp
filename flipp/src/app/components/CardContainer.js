@@ -1,7 +1,8 @@
+import CardText from "./CardText";
 export default function CardContainer() {
   return (
     <div className="card-container">
-      <h1>card container</h1>
+      <CardText></CardText>
     </div>
   );
 }
