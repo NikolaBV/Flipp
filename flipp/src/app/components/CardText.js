@@ -1,7 +1,7 @@
-export default function CardText() {
+export default function CardText({ cards }) {
   return (
     <div className="card-text">
-      <p>Term</p>
+      <p>{cards[1].definition}</p>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import CardText from "./CardText";
-export default function CardContainer() {
+export default function CardContainer({ cards }) {
   return (
     <div className="card-container">
-      <CardText></CardText>
+      <CardText cards={cards}></CardText>
     </div>
   );
 }
