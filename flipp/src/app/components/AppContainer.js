@@ -19,6 +19,13 @@ export default function AppContainer() {
     }
     console.log(currentCard);
   }
+  function previousHandleClick() {
+    if (currentCard == 0) {
+      setCurrentCard(cards.length - 1);
+    } else {
+      setCurrentCard(currentCard - 1);
+    }
+  }
   const cards = [
     {
       term: "PC",
@@ -44,6 +51,7 @@ export default function AppContainer() {
       <ButtonContainer
         flipHandleClick={flipHandleClick}
         nextHandleClick={nextHandleClick}
+        previousHandleClick={previousHandleClick}
       ></ButtonContainer>
     </div>
   );
