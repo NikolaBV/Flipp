@@ -1,7 +1,7 @@
-export default function Button({ buttonType }) {
+export default function Button({ buttonType, handleClick }) {
   return (
     <div className={`button ${buttonType}`}>
-      <button>{buttonType}</button>
+      <button onClick={handleClick}>{buttonType}</button>
     </div>
   );
 }
