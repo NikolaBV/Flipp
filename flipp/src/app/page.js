@@ -1,5 +1,9 @@
 import AppContainer from "./components/AppContainer";
 
 export default function Home() {
-  return <AppContainer></AppContainer>;
+  return (
+    <div className="window">
+      <AppContainer></AppContainer>
+    </div>
+  );
 }

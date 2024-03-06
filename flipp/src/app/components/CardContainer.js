@@ -1,7 +1,8 @@
-export default function CardContainer() {
+import CardText from "./CardText";
+export default function CardContainer({ cards }) {
   return (
     <div className="card-container">
-      <h1>card container</h1>
+      <CardText cards={cards}></CardText>
     </div>
   );
 }

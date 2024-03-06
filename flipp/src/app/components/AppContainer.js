@@ -1,14 +1,22 @@
 import CardContainer from "./CardContainer";
 import Header from "./Header";
-import Button from "./Button";
+import ButtonContainer from "./ButtonContainer";
 export default function AppContainer() {
+  const cards = [
+    {
+      term: "PC",
+      definition: "Personal computer",
+    },
+    {
+      term: "Ivana",
+      definition: "My bebi",
+    },
+  ];
   return (
-    <div className="App">
+    <div className="app">
       <Header></Header>
-      <CardContainer></CardContainer>
-      <Button buttonType="flip"></Button>
-      <Button buttonType="next"></Button>
-      <Button buttonType="previous"></Button>
+      <CardContainer cards={cards}></CardContainer>
+      <ButtonContainer></ButtonContainer>
     </div>
   );
 }
