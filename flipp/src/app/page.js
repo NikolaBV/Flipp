@@ -1,6 +1,5 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import AppContainer from "./components/AppContainer";
 
 export default function Home() {
-  return <div></div>;
+  return <AppContainer></AppContainer>;
 }
