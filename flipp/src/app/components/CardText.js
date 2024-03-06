@@ -1,7 +1,11 @@
-export default function CardText({ cards, isFlipped }) {
+export default function CardText({ cards, isFlipped, currentCard }) {
   return (
     <div className="card-text">
-      {isFlipped ? <p>{cards[0].definition}</p> : <p>{cards[0].term}</p>}
+      {isFlipped ? (
+        <p>{cards[currentCard].definition}</p>
+      ) : (
+        <p>{cards[currentCard].term}</p>
+      )}
     </div>
   );
 }
